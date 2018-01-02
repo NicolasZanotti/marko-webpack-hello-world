@@ -1,0 +1,19 @@
+class {
+	handleClick(event) {
+		console.log('click', event);
+	}
+}
+
+style {
+	.basic-button {
+		color: black;
+		background-color: lightblue;
+	}
+
+	.basic-button:hover {
+		background-color: blue;
+		color: white;
+	}
+}
+
+<button class="basic-button" onClick("handleClick")>${input.label}</button>
